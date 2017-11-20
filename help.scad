@@ -51,8 +51,6 @@ module help_YourLibraryNameHere(modName = false) {
         echo(modules[index][text]);
       }
     }
-
-  echo("see this file for a blank example");
 }
 
 
