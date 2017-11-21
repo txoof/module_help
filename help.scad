@@ -1,7 +1,21 @@
 // openscad help module
+
+
+help_mod_demo("");
+echo("");
+help_mod_demo("example");
+echo("");
+help_mod_demo("hollowSphere");
+
+
 //use the format: module help_LIBRARYNAME(modName = false) {}
 module help_YourLibraryNameHere(modName = false) {
   //edit content below this line
+  
+  //add library name here
+  LibraryName = "LIBRARYNAME";
+
+  //enter module and function information here
   modules = 
             [["example",
               "module/function: name(param1 = <data type>, param2 = <data type>, param3 = <data type>)",
@@ -38,7 +52,7 @@ module help_YourLibraryNameHere(modName = false) {
       for (i=[0:len(modules)-1]) {
         echo(modules[i][0]);
       }
-      echo("USE: help_mod(\"moduleName \")  ");
+      echo(str("USE: help_mod(\"", LibraryName, "\")  "));
       //assert(modName);
     } else {
       //return the first matching entry
@@ -55,7 +69,10 @@ module help_YourLibraryNameHere(modName = false) {
 
 
 
-module help_mod(modName = false) {
+module help_mod_demo(modName = false) {
+  
+  LibraryName = "help_mod_demo";
+  
   modules = [["example",
               "module/function: name(param1 = <data type>, param2 = <data type>, param3 = <data type>)",
               "returns: function return values/none for modules",
@@ -99,7 +116,7 @@ module help_mod(modName = false) {
       for (i=[0:len(modules)-1]) {
         echo(modules[i][0]);
       }
-      echo("USE: help_mod(\"moduleName \")  ");
+      echo(str("USE: help_mod(\"", LibraryName, "\")  "));
       //assert(modName);
     } else {
       //return the first matching entry
@@ -118,6 +135,4 @@ module help_mod(modName = false) {
 
 
 
-
-help_mod("");
 
