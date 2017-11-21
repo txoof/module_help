@@ -1,7 +1,7 @@
 // openscad help module
 
 
-help_mod_demo("");
+help_mod_demo();
 echo("");
 help_mod_demo("example");
 echo("");
@@ -52,13 +52,13 @@ module help_YourLibraryNameHere(modName = false) {
       for (i=[0:len(modules)-1]) {
         echo(modules[i][0]);
       }
-      echo(str("USE: help_mod(\"", LibraryName, "\")  "));
+      echo(str("USE: help_",LibraryName,"(\"moduleName\")  "));
       //assert(modName);
     } else {
       //return the first matching entry
       //-possibly modify this to return all entries - allows partial match
 
-      echo(str("Help for module/function: ", modName));
+      echo(str("Help for module or function: ", modName));
       //basic = modules[index[0]][1];
       //echo(basic);
       for (text=[1:len(modules[index])-1]) {
@@ -116,13 +116,14 @@ module help_mod_demo(modName = false) {
       for (i=[0:len(modules)-1]) {
         echo(modules[i][0]);
       }
-      echo(str("USE: help_mod(\"", LibraryName, "\")  "));
+      echo(str("USE: help_",LibraryName,"(\"moduleName\")  "));
+      //echo(str("USE: help_mod(\"", LibraryName, "\")  "));
       //assert(modName);
     } else {
       //return the first matching entry
       //-possibly modify this to return all entries - allows partial match
 
-      echo(str("Help for module/function: ", modName));
+      echo(str("Help for module or function: ", modName));
       //basic = modules[index[0]][1];
       //echo(basic);
       for (text=[1:len(modules[index])-1]) {
