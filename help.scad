@@ -27,7 +27,7 @@ ECHO: "Help for module/function: colorArray"
 ECHO: "function: colorAray(columns = <integer>, rows = <integer, scaled = <boolean>)"
 ECHO: "returns: <vector of vectors>"
 ECHO: "Description: returns column X rows vector of interpolated RGB values"
-ECHO: "Paramaters:"
+ECHO: "Parameters:"
 ECHO: "     columns      <integer>   1-255 columns"
 ECHO: "     rows         <integer>   1-255 rows"
 ECHO: "     scaled       <boolean>   scale the colors from white to full color"
@@ -48,8 +48,8 @@ modules = [
             "returns: none (module)",
             //description of function
             "Description: This module does things",
-            //Paramaters: - list of paramaters, data types and an explanation of use
-            "Paramaters: ",
+            //Parameters: - list of paramaters, data types and an explanation of use
+            "Parameters: ",
             //paramater one
             "     radius        <real>      radius of bolt head"
             //paramter two
@@ -79,7 +79,7 @@ module help_YourLibraryNameHere(modName = false) {
               "module or function: name(param1 = <data type>, param2 = <data type>, param3 = <data type>)",
               "returns: function return values/none for modules",
               "Description: basic description of function/module",
-	      "Paramaters:",
+	      "Parameters:",
               "     param1       <data type>   explanation of paramater",
               "     param2       <data type>   explanation of paramater"],
 
@@ -87,7 +87,7 @@ module help_YourLibraryNameHere(modName = false) {
               "module/function: ",
               "returns: ",
               "Description: ",
-              "Paramaters: ",
+              "Parameters: ",
               "      param1     <data type>   explanation",
               ],
             ];
@@ -135,7 +135,7 @@ module help_mod_demo(modName = false) {
               "module/function: name(param1 = <data type>, param2 = <data type>, param3 = <data type>)",
               "returns: function return values/none for modules",
               "Description: basic description of function/module",
-	      "Paramaters:",
+	      "Parameters:",
               "     param1       <data type>   explanation of paramater",
               "     param2       <data type>   explanation of paramater"],
 
@@ -143,7 +143,7 @@ module help_mod_demo(modName = false) {
               "module: hollowSphere(outRad = <real>, inRad = <real>)",
               "returns: none (module)",
               "Description: creates a hollow sphere with outRad radius and a hollow volume with inRad radius",
-              "Paramaters:",
+              "Parameters:",
               "     outRad       <real>        outter radius of sphere",
               "     inRad        <real>        inner radius of hollow sphere"
              ],
@@ -151,7 +151,7 @@ module help_mod_demo(modName = false) {
               "function: bezierLine(step = <real>, controlPoints = <vector>)",
               "returns: <vector of vectors>",
               "Description: returns a vector of points along a calculated bezier curve",
-              "Paramaters:",
+              "Parameters:",
               "     step           <real>      step size across bezier curve",
               "     controlPoints  <vector>    [[x0,y0], [x1,y1], [x2,y2], [x3,y3]]"
              ],

@@ -12,7 +12,7 @@ module help_YourLibraryNameHere(modName = false) {
               "module or function: name(param1 = <data type>, param2 = <data type>, param3 = <data type>)",
               "returns: function return values/none for modules",
               "Description: basic description of function/module",
-              "Paramaters:",
+              "Parameters:",
               "     param1       <data type>   explanation of paramater",
               "     param2       <data type>   explanation of paramater"],
 
@@ -20,7 +20,7 @@ module help_YourLibraryNameHere(modName = false) {
               "module/function: ",
               "returns: ",
               "Description: ",
-              "Paramaters: ",
+              "Parameters: ",
               "      param1     <data type>   explanation",
               ],
             ];
