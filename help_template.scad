@@ -41,7 +41,7 @@ module help_YourLibraryNameHere(modName = false) {
 
       echo("Available Help Topics in this Library:");
       for (i=[0:len(modules)-1]) {
-        echo(modules[i][0]);
+        echo(str(" ", modules[i][0]));
       }
       echo(str("USE: help_",LibraryName,"(\"moduleName\")  "));
       //assert(modName);
